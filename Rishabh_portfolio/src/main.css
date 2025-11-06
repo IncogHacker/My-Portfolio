@@ -1793,3 +1793,216 @@ input:focus-visible:hover {
 textarea:focus-visible:hover {
     outline: 0.1rem solid red;
 }
+
+
+
+/* contact section  Css*/
+
+/* ==================== Contact Section ==================== */
+#Contact {
+    width: 100%;
+    background-color: #0a0a0a;
+    padding: 60px 0;
+    color: #00ffff; /* neon blue */
+}
+
+a{
+ text-decoration: none;
+}
+
+.Contact-main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Contact-main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+.contact-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.contact-form {
+    flex: 1 1 400px;
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    animation: float 3s ease-in-out infinite alternate;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contact-form .form-group p {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #00ffff;
+    border-radius: 5px;
+    background-color: #0a0a0a;
+    color: #00ffff;
+    resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #00ffff99;
+}
+
+.contact-form button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #00ffff, #0066ff);
+    color: #0a0a0a;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: linear-gradient(to right, #0066ff, #00ffff);
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.contact-info {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contact-info .info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.3s ease;
+}
+
+.contact-info .info-item:hover {
+    transform: translateX(5px);
+}
+
+.contact-info .info-item .icon {
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    background-color: #2a2a2a;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.contact-info .info-item .icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.contact-info .info-item p {
+    font-size: 1.2rem;
+    color: #00ffff;
+}
+
+/* ==================== Float Animation ==================== */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(-10px); }
+}
+
+/* ==================== End Section ==================== */
+#End {
+    width: 100%;
+    background-color: #0a0a0a;
+    padding: 60px 0;
+    color: #00ffff;
+    text-align: center;
+}
+
+#End .End-main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#End h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+}
+
+#End .icon-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+#End .icon-o {
+    width: 50px;
+    height: 50px;
+    background-color: #2a2a2a;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: all 0.3s ease;
+}
+
+#End .icon-o:hover {
+    transform: rotate(360deg);
+    background: linear-gradient(to right, #00ffff, #0066ff);
+}
+
+#End .icon-o img {
+    width: 20px;
+    height: 20px;
+}
+
+/* ==================== Responsive ==================== */
+@media screen and (max-width: 1024px) {
+    .contact-flex { flex-direction: column; }
+    .contact-form, .contact-info { width: 100%; }
+}
+
+@media screen and (max-width: 768px) {
+    #Contact h1, #End h1 { font-size: 1.5rem; }
+    .contact-info { gap: 15px; }
+
+    .contact-info {
+    display: flex;
+    align-items: center;
+    flex-direction:row;
+    justify-content: space-around;
+   
+}
+.icon img{
+    position: relative;
+    left: 22%;
+}
+
+.contact-form{
+    margin-bottom: -100px;
+  
+}
+    
+}
+
