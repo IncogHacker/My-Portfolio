@@ -424,7 +424,8 @@ body {
     }
 
     .theme img {
-        width: 180px;
+        width: 300px;
+        height: 350px;
         margin-left: 10px;
     }
 
@@ -671,13 +672,16 @@ body {
 
 @media(max-width:640px) {
 
+   
+
     #skill {
-        max-height: 200vh;
+        max-height: 170vh;
     }
 
     #skill .main-heading {
         padding-top: 30px;
-        font-size: 1rem;
+        font-size: 1.5rem;
+       
     }
 
     #skill .For-About {
@@ -692,6 +696,7 @@ body {
             padding: 0px 20px 0px 20px;
             width: fit-content;
             line-height: 1.3rem;
+            
         }
 
         .grid {
