@@ -3,7 +3,7 @@ import { StoreInformation } from "./StoreInformation";
 
 export let FetchCall = async(type="MinorProject")=>{
 
-    let StoreContent= await fetch(`../public/Images/Api/${type}.json`,{
+    let StoreContent= await fetch(`/Api/${type}.json`,{
 
         headers:{
             Accept:"application/json"

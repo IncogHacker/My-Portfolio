@@ -3,76 +3,73 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-Page</title>
+    <meta name="keyword" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="./src/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="shortcut icon" href="./public/Images/logofavicon/favicon.ico" type="image/x-icon">
+
 </head>
 
+
 <body>
-    <!DOCTYPE html>
-    <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact-Page</title>
-        <meta name="keyword" content="">
-        <meta name="description" content="">
-        <link rel="stylesheet" href="./src/main.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
 
-   <section id="Contact">
-    <div class="Contact-main">
-        <h1>Contact Me</h1>
+    <section id="Contact">
+        <div class="Contact-main">
+            <h1>Contact Me</h1>
 
-        <div class="contact-flex">
-            <div class="contact-form">
-                <form id="contact-form">
-                    <div class="form-group">
-                        <p>Name</p>
-                        <input type="text" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <p>Email</p>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <p>Message</p>
-                        <textarea name="message" placeholder="Write your message" required></textarea>
-                    </div>
+            <div class="contact-flex">
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <p>Name</p>
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <p>Email</p>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <p>Message</p>
+                            <textarea name="message" placeholder="Write your message" required></textarea>
+                        </div>
 
-                    <button type="submit">Send Message</button>
-                </form>
+                        <button type="submit">Send Message</button>
+                    </form>
 
-                <!-- Status Message -->
-                <div id="status-msg" class="status-msg"></div>
-            </div>
-
-            <div class="contact-info">
-                <div class="info-item">
-                    <a href="mailto:yourmail@example.com">
-                        <div class="icon"><img src="/Images/logo/gmail_5968534.png" alt="Mail"></div>
-                        <p>Email Me</p>
-                    </a>
+                    <!-- Status Message -->
+                    <div id="status-msg" class="status-msg"></div>
                 </div>
-                <div class="info-item">
-                    <a href="tel:+919876543210">
-                        <div class="icon"><img src="/Images/logo/call-now_5651426.png" alt="Call"></div>
-                        <p>Call Me</p>
-                    </a>
-                </div>
-                <div class="info-item">
-                    <a href="https://www.linkedin.com/in/rishabh-singh-0564082bb/">
-                        <div class="icon"><img src="/Images/logo/linkedin_2504923.png" alt="LinkedIn"></div>
-                        <p>LinkedIn</p>
-                    </a>
+
+                <div class="contact-info">
+                    <div class="info-item">
+                        <a href="mailto:yourmail@example.com">
+                            <div class="icon"><img src="/Images/logo/gmail_5968534.png" alt="Mail"></div>
+                            <p>Email Me</p>
+                        </a>
+                    </div>
+                    <div class="info-item">
+                        <a href="tel:+919876543210">
+                            <div class="icon"><img src="/Images/logo/call-now_5651426.png" alt="Call"></div>
+                            <p>Call Me</p>
+                        </a>
+                    </div>
+                    <div class="info-item">
+                        <a href="https://www.linkedin.com/in/rishabh-singh-0564082bb/">
+                            <div class="icon"><img src="/Images/logo/linkedin_2504923.png" alt="LinkedIn"></div>
+                            <p>LinkedIn</p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
     <!-- End Section -->
@@ -94,50 +91,44 @@
         </div>
     </section>
 
+</body>
+
+<!--------------------------------------------------------------- Script js to send mails ----------------------------------------------------->
 
 
-    <!--------------------------------------------------------------- Script js to send mails ----------------------------------------------------->
- 
-   
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 
 <script>
-    
-  // Initialize EmailJS once
-  emailjs.init('-aavIeUy-Wk9b6tsg');
 
-  const form = document.getElementById('contact-form');
-  const statusMsg = document.getElementById('status-msg');
+    // Initialize EmailJS once
+    emailjs.init('-aavIeUy-Wk9b6tsg');
 
-  // Remove any previous listeners just in case
-  form.replaceWith(form.cloneNode(true)); 
-  const newForm = document.getElementById('contact-form');
+    const form = document.getElementById('contact-form');
+    const statusMsg = document.getElementById('status-msg');
 
-  newForm.addEventListener('submit', function(e) {
-      e.preventDefault();
+    // Remove any previous listeners just in case
+    form.replaceWith(form.cloneNode(true));
+    const newForm = document.getElementById('contact-form');
 
-      statusMsg.textContent = "Sending...";
-      statusMsg.className = "status-msg sending";
-      statusMsg.style.display = "block";
+    newForm.addEventListener('submit', function (e) {
+        e.preventDefault();
 
-      emailjs.sendForm('service_81p8r59', 'template_9tdktbl', this)
-          .then(() => {
-              statusMsg.textContent = "Message Sent!";
-              statusMsg.className = "status-msg success";
-              this.reset();
-          })
-          .catch((err) => {
-              statusMsg.textContent = "Failed to send message!";
-              statusMsg.className = "status-msg error";
-              console.error(err);
-          });
-  });
+        statusMsg.textContent = "Sending...";
+        statusMsg.className = "status-msg sending";
+        statusMsg.style.display = "block";
+
+        emailjs.sendForm('service_81p8r59', 'template_9tdktbl', this)
+            .then(() => {
+                statusMsg.textContent = "Message Sent!";
+                statusMsg.className = "status-msg success";
+                this.reset();
+            })
+            .catch((err) => {
+                statusMsg.textContent = "Failed to send message!";
+                statusMsg.className = "status-msg error";
+                console.error(err);
+            });
+    });
 </script>
-
-
-
-
-   
-
