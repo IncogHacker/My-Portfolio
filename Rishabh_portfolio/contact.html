@@ -29,7 +29,7 @@
 
         <div class="contact-flex">
             <div class="contact-form">
-                <form action="mailto:yourmail@example.com" method="POST" enctype="text/plain">
+                <form id="contact-form">
                     <div class="form-group">
                         <p>Name</p>
                         <input type="text" name="name" placeholder="Your Name" required>
@@ -42,8 +42,12 @@
                         <p>Message</p>
                         <textarea name="message" placeholder="Write your message" required></textarea>
                     </div>
+
                     <button type="submit">Send Message</button>
                 </form>
+
+                <!-- Status Message -->
+                <div id="status-msg" class="status-msg"></div>
             </div>
 
             <div class="contact-info">
@@ -70,18 +74,70 @@
     </div>
 </section>
 
-<!-- End Section -->
-<section id="End">
-    <div class="End-main">
-        <h1>Social Media Handles</h1>
-        <div class="icon-flex">
-            <a href="https://github.com/IncogHacker" class="icon-o"><img src="/Images/logo/github-mark.png" alt="GitHub"></a>
-            <a href="https://www.linkedin.com/in/rishabh-singh-0564082bb/" class="icon-o"><img src="/Images/logo/linkedin_2504923.png" alt="LinkedIn"></a>
-            <a href="https://www.instagram.com/ig.incoghax/" class="icon-o"><img src="/Images/logo/instagram_2111463.png" alt="Instagram"></a>
-            <a href="https://www.facebook.com/Rish4bhsingh/" class="icon-o"><img src="/Images/logo/facebook_2504903.png" alt="Facebook"></a>
-            <a href="https://www.youtube.com/@AlgoMasteryy" class="icon-o"><img src="/Images/logo/youtube_5968852.png" alt="YouTube"></a>
-        </div>
-    </div>
-</section>
 
+    <!-- End Section -->
+    <section id="End">
+        <div class="End-main">
+            <h1>Social Media Handles</h1>
+            <div class="icon-flex">
+                <a href="https://github.com/IncogHacker" class="icon-o"><img src="/Images/logo/github-mark.png"
+                        alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/rishabh-singh-0564082bb/" class="icon-o"><img
+                        src="/Images/logo/linkedin_2504923.png" alt="LinkedIn"></a>
+                <a href="https://www.instagram.com/ig.incoghax/" class="icon-o"><img
+                        src="/Images/logo/instagram_2111463.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/Rish4bhsingh/" class="icon-o"><img
+                        src="/Images/logo/facebook_2504903.png" alt="Facebook"></a>
+                <a href="https://www.youtube.com/@AlgoMasteryy" class="icon-o"><img
+                        src="/Images/logo/youtube_5968852.png" alt="YouTube"></a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--------------------------------------------------------------- Script js to send mails ----------------------------------------------------->
+ 
+   
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+
+<script>
+    
+  // Initialize EmailJS once
+  emailjs.init('-aavIeUy-Wk9b6tsg');
+
+  const form = document.getElementById('contact-form');
+  const statusMsg = document.getElementById('status-msg');
+
+  // Remove any previous listeners just in case
+  form.replaceWith(form.cloneNode(true)); 
+  const newForm = document.getElementById('contact-form');
+
+  newForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      statusMsg.textContent = "Sending...";
+      statusMsg.className = "status-msg sending";
+      statusMsg.style.display = "block";
+
+      emailjs.sendForm('service_81p8r59', 'template_9tdktbl', this)
+          .then(() => {
+              statusMsg.textContent = "Message Sent!";
+              statusMsg.className = "status-msg success";
+              this.reset();
+          })
+          .catch((err) => {
+              statusMsg.textContent = "Failed to send message!";
+              statusMsg.className = "status-msg error";
+              console.error(err);
+          });
+  });
+</script>
+
+
+
+
+   
 

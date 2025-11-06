@@ -2005,4 +2005,57 @@ a{
 }
     
 }
+/* -------------Message Sending  */
+
+.status-msg {
+    margin-top: 15px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    display: none;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1rem;
+    color: #00ffff; /* neon blue text */
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    background-color: #1a1a1a; /* dark grey background */
+}
+
+/* Sending state - glowing pulse */
+.status-msg.sending {
+    display: block;
+    animation: neonPulse 1.2s infinite;
+}
+
+/* Success state - subtle glow */
+.status-msg.success {
+    display: block;
+    color: #00ffea;
+    text-shadow: 0 0 8px #00ffea, 0 0 15px #00ffea;
+    box-shadow: 0 0 12px rgba(0, 255, 234, 0.6);
+    animation: fadeIn 1s forwards;
+}
+
+/* Error state - neon red glow */
+.status-msg.error {
+    display: block;
+    color: #ff4d4d;
+    text-shadow: 0 0 8px #ff4d4d, 0 0 15px #ff4d4d;
+    box-shadow: 0 0 12px rgba(255, 77, 77, 0.6);
+    animation: fadeIn 1s forwards;
+}
+
+/* Neon pulse animation for sending */
+@keyframes neonPulse {
+    0% { box-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff; opacity: 0.8; }
+    50% { box-shadow: 0 0 15px #00ffff, 0 0 25px #00ffff; opacity: 1; }
+    100% { box-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff; opacity: 0.8; }
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 
