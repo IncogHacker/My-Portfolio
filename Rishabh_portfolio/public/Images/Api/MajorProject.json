@@ -1,0 +1,53 @@
+[
+    {
+        "id": "1",
+        "img": "Images/Project Images/weather.png",
+        "ProjectName": "Ri-Weather-App",
+        "Information": "This Weather App is built using HTML, CSS, JavaScript, and Vite for fast performance and modular development. It fetches real-time weather data from a public API and displays details like temperature, humidity, and conditions. The app also uses geolocation to detect and show weather based on the user’s current location with a clean, responsive interface.",
+        "ProjectLink": "https://regal-croquembouche-5814d7.netlify.app/",
+        "Githublink": "https://gist.github.com/IncogHacker/8ee9d4b118278a5d1a8b357fe92d3e60",
+        "ApplicationUse": [
+            "Java-Srcript",
+            "CSS",
+            "HTML",
+            "Figma ",
+            "API",
+            "Vite"
+        ]
+    },
+    {
+        "id": "2",
+        "img": "Images/Project Images/Facedetect.png",
+        "ProjectName": "FACE DETECTION COLLEGE MANAGEMENT SYSTEM ",
+        "Information": "This Face Detection Management System is developed using Python, OpenCV, and SQL. It detects and recognizes faces in real-time while managing a student database efficiently. The system stores and retrieves user data, allows searching and updating records, and integrates multiple detection methods to ensure accuracy and smooth data handling.",
+        "ProjectLink": "https://youtu.be/Z79MrhgLftM",
+        "Githublink": "https://github.com/IncogHacker/Face_Detection_Management.git",
+        "ApplicationUse": [
+            "Python",
+            "OpenCV",
+            "SQL",
+            "NumPy",
+            "Pandas",
+            "Tkinter",
+            "Face Recognition Library"
+        ]
+    },
+    {
+        "id": "3",
+        "img": "Images/Project Images/Decor.png",
+        "ProjectName": "Demo-Website",
+        "Information": "This Weather App is built using HTML, CSS, JavaScript, and Vite for fast performance and modular development. It fetches real-time weather data from a public API and displays details like temperature, humidity, and conditions. The app also uses geolocation to detect and show weather based on the user’s current location with a clean, responsive interface.",
+        "ProjectLink": "https://decorwebri.netlify.app/",
+        "Githublink": "https://github.com/IncogHacker/Decor_Webiste.git",
+        "ApplicationUse": [
+            "Java-Srcript",
+            "CSS",
+            "HTML",
+            "Figma ",
+            "API",
+            "Vite",
+            "MongodDb",
+            "Node & Express js"
+        ]
+    }
+]

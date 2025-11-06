@@ -1,0 +1,67 @@
+[
+    {
+        "id":"1",
+        "img":"Images/Project Images/FinalTodo1.webp",
+        "ProjectName": "To-Do-List",
+        "Information": "This To-Do List web app helps users easily add, delete, and manage daily tasks. I built it using HTML, CSS, and JavaScript with a focus on clean UI and smooth interactions. Tasks are stored in local storage, so your list stays even after refreshing the page",
+        "ProjectLink":"https://todolistri.netlify.app/",
+        "Githublink":"https://gist.github.com/IncogHacker/c1a50b5d0b29182506b4200544210b92",
+        "ApplicationUse":["Java-Srcript","CSS","HTML","Figma "]
+    },
+    {
+        "id":"2",
+        "img":"Images/Project Images/stopwatch_neo_blue.webp",
+        "ProjectName": "Chrono-Flow",
+        "Information": "This Stopwatch app lets users start, pause, and reset time with precision. Built using HTML, CSS, and JavaScript, it features a smooth UI and accurate time tracking. The app also uses local storage to remember the last session’s progress even after a page reload.",
+        "ProjectLink":"https://stopwatchclocksri.netlify.app/",
+        "Githublink":"https://gist.github.com/IncogHacker/9d883a523ff7d8a4b53a33b09b2f7a41",
+        "ApplicationUse":["Java-Srcript","CSS","HTML","Vite"]
+    },
+     {
+        "id":"3",
+        "img":"Images/Project Images/colourgradient2.png",
+        "ProjectName": "Gradient-Craft",
+        "Information": "This Gradient web app lets users generate, tweak, and copy color gradients with ease  change directions, adjust stops, and instantly copy CSS or HEX values. Designed with a clean, responsive UI for quick experimentation and seamless integration into projects",
+        "ProjectLink":"https://colurgradient.netlify.app/",
+        "Githublink":"https://gist.github.com/IncogHacker/f0624fd0a0b0f6d96d7ef634470bfd0f",
+        "ApplicationUse":["Java-Srcript","CSS","HTML","Figma "]
+    },
+     {
+        "id":"4",
+        "img":"Images/Project Images/jokefetch.png",
+        "ProjectName": "Joke-Fetch",
+        "Information": "This project fetches random dad jokes from a public API using JavaScript’s async/await functions. It dynamically updates the UI with each new joke and features a smooth, responsive design made with HTML and CSS.",
+        "ProjectLink":"https://jokeapiri.netlify.app/",
+        "Githublink":"https://gist.github.com/IncogHacker/e858a0c3e9b9863ec225f609b5255a48",
+        "ApplicationUse":["Java-Srcript","CSS","HTML","Figma ","API"]
+    },
+    {
+        "id":"5",
+        "img":"Images/Project Images/clockonly.png",
+        "ProjectName": "Neo-Clock",
+        "Information": "TimeSync is a real-time digital clock built using HTML, CSS, and JavaScript. It updates every second with smooth transitions and a clean modern interface. Designed to keep precision and aesthetics perfectly in sync.",
+        "ProjectLink":"https://clocksri.netlify.app/",
+        "Githublink":"https://gist.github.com/IncogHacker/f54df37fead57b56e499d642fa62790d",
+        "ApplicationUse":["Java-Srcript","CSS","HTML"]
+    },
+    {
+        "id":"6",
+        "img":"Images/Project Images/digital.png",
+        "ProjectName": "Digital-Clock",
+        "Information": "This Digital Clock project is made using HTML, CSS, and JavaScript. It uses the setInterval() function to update time every second and dynamically displays hours, minutes, and seconds in real-time through DOM manipulation.",
+        "ProjectLink":"https://tiny-tapioca-6ed549.netlify.app/",
+        "Githublink":"https://gist.github.com/IncogHacker/a703f28f7f6ef29f23dbd99e919f1985",
+        "ApplicationUse":["Java-Srcript","CSS","HTML"]
+    },
+        {
+        "id":"7",
+        "img":"Images/Project Images/neon_timer_400x230.webp",
+        "ProjectName": "Race-Timer",
+        "Information": "This Timer project is built using HTML, CSS, and JavaScript. It allows users to start, pause, reset, and track elapsed time with smooth UI updates. The timer uses JavaScript functions like setInterval() and event listeners to handle accurate timing and user interactions.",
+        "ProjectLink":"https://racetimerri.netlify.app/",
+        "Githublink":"https://gist.github.com/IncogHacker/bf311ed5963bed31481854b1f12ad23f",
+        "ApplicationUse":["Java-Srcript","CSS","HTML","Figma ","Vite"]
+    }
+
+
+]
